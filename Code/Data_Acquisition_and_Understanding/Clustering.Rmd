@@ -1,0 +1,89 @@
+---
+title: "Clustering des Familles Produit"
+author: "Yannick DONGUE"
+date: "2024-06-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import des librairies
+
+```{r Import libs, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(lubridate)
+library(dtwclust)
+library(wpp2019)
+library(countrycode)
+library(dynamicTreeCut)
+rm(list= ls())
+setwd("D:/Alternance_2023_UTT/Thèse PROFESSIONNELLE")
+```
+
+## Import des données et Normalisation
+
+```{r data import, warning=FALSE}
+sales_time_series <- read.csv("D:/Alternance_2023_UTT/Thèse PROFESSIONNELLE/Product families over time.csv")
+sales_time_series <- sales_time_series %>% 
+  rename_with(~str_replace(., "X", ""), starts_with("X"))
+productfamilies <- sales_time_series$Product.Family
+sales_time_series$Product.Family <- NULL
+
+sales_time_series.norm <- zscore(sales_time_series)
+
+```
+
+
+## Clusterisation hiérarchique
+
+```{r Dendogram, essage=FALSE, warning=FALSE}
+#my.dist <-proxy::dist(sales_time_series, method = "dtw_basic",window.size = NULL, normalize = TRUE)
+my.dist.norm <-proxy::dist(sales_time_series.norm, method = "dtw_basic",window.size = NULL, normalize = TRUE)
+
+#my.dist <- stats::as.dist(my.dist)
+my.dist.norm <- stats::as.dist(my.dist.norm)
+#cl <- hclust(my.dist, method = "average")
+#plot(cl)
+
+cl.norm <- hclust(my.dist.norm, method = "complete")
+plot(cl.norm)
+
+```
+
+## Clustering avec à partir du dendogramme
+
+```{r Clusters}
+clusters.norm <- cutreeDynamicTree(cl.norm, minModuleSize = 2)
+
+cluster.df <- data.frame(productfamilies, clusters.norm)
+
+```
+
+
+## Plot des clusters et de leur profil d'évolution 
+
+```{r Plots, essage=FALSE, warning=FALSE}
+
+sales_time_series.norm %>% 
+  cbind(cluster.df) %>% 
+  pivot_longer(-c(productfamilies, clusters.norm)) %>%
+  mutate(name = ymd(name)) %>%
+  rename(date = name) %>%
+  ggplot() +
+  geom_line(aes(x = date, y = value, col = productfamilies)) +
+  geom_smooth(aes(x = date, y = value, group = clusters.norm)) +
+  facet_wrap(~clusters.norm) +
+  theme_bw()
+ 
+```
+
+
+## Enregistrement des données de cluster 
+
+```{r enregistrement}
+write.csv(cluster.df, 'pf+clusters+dtw+complete.csv')
+```
+
+
