@@ -1,3 +1,6 @@
-# This folder contains code for modeling and related activities (such as feature engineering, model evaluation etc.)
+# Ce dossier contient les codes qui font partie de l'étude modélisation
 
-You can add detailed description in this markdown related to your specific data science project.
+1. on va faire des tests statistiques : "Etudes de Modelisation tests stats.ipynb"
+2. On va tester des modèles de base de type arima sur chaque famille
+3. On va appliquer l'algorithme VAR pour chaque cluster. 
+4. On va éventuellement tester d'autres méthodes.
