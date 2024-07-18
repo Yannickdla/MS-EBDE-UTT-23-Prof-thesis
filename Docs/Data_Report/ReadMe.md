@@ -1,2 +1,2 @@
-# DataReport Folder
-_Location to place documents describing results of data exploration_
+# Dossier DataReport 
+_Dossier contenant un petit resumé de l'exploration des données_
