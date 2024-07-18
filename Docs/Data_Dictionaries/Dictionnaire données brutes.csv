@@ -1,5 +1,5 @@
-Index de colonne;Nom de colonne;Type de Variable;Valeurs;Description courte 
+ï»¿Index de colonne;Nom de colonne;Type de Variable;Valeurs;Description courte 
 5;INDICATORS;Categorical;QTE, TO, COG;Indicateur representant un enregistrement des ventes 
-10;SIGNEDDATA;Float64;[-2M : 10M] pour QTE;Valeur numérique associée à un enregistrement de vente 
+10;SIGNEDDATA;Float64;[-2M : 10M] pour QTE;Valeur numÃ©rique associÃ©e Ã  un enregistrement de vente 
 8;TIME;Datetime;2020 - 2024;Mois d'enregistrement de la vente 
-20;Product Family;Categorical;A, B, C, etc;Famille produit associée à un article vendu 
+20;Product Family;Categorical;A, B, C, etc;Famille produit associÃ©e Ã  un article vendu 
