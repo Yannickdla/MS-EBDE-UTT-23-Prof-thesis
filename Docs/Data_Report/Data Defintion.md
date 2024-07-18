@@ -27,7 +27,7 @@ _**For ease of modifying this report, placeholder links are included in this pag
 | Jeu de données anonimisé| [Product families over time](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Sample_Data/Processed/Product%20families%20over%20time.csv) | [script2.ipynb](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Code/Data_Acquisition_and_Understanding/transform%20data%20for%20time%20series.ipynb) | [Processed Dataset 1 Report](link/to/report1)|
 
 
-* Rapport données anonymisées. _Dans cette étape on a anonymisé les données pour travailler et partager notre travail_
+* Résumé données anonymisées. _Dans cette étape on a anonymisé les données pour travailler et partager notre travail_
 
 ## Feature Sets
 
@@ -36,5 +36,5 @@ _**For ease of modifying this report, placeholder links are included in this pag
 | Données de clusters | [Clusters(complete)data](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Sample_Data/For_Modeling/pf+clusters+dtw+complete.csv) | [Clustering.rmd](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Code/Data_Acquisition_and_Understanding/Clustering.Rmd) | [Feature Set1 Report](link/to/report1)|
 | Données de stationnarisation | [Stationnarity steps](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Sample_Data/For_Modeling/stationnarity_steps.csv) |[Stationnarisation.ipynb](https://github.com/Yannickdla/MS-EBDE-UTT-23-Prof-thesis/blob/51d2d2c26a6bac8a20782762489fd016dc73fb1a/Code/Data_Acquisition_and_Understanding/analyse%20exploratoire%20diff%C3%A9renciation.ipynb) | [Feature Set2 Report](link/to/report2)|
 
-* Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
-* Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
+* Résumé Clustering. _Cette information permet de diviser les familles de produit groupes afin de pouvoir mettre ensemble les familles qui les mêmes profils d'évolution_
+* Résumé stationnarisation. _Cette information permet de synthétiser les informations nécessaire pour rendre les séries temporelles stationnaires_
