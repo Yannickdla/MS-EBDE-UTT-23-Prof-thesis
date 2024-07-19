@@ -1,6 +1,6 @@
-# Folder for hosting project documents and reports for a Data Science Project
+# Dossier comportant les documents et rapports de notre projet
 
-These could be: 
+These could be:
 
 1. Project management and planning docs
 2. System architecture

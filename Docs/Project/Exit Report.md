@@ -1,17 +1,25 @@
-# Exit Report of Project <X> for Customer <Y>
+# Exit Report of Project Volumes prediction for Customer DB Enaex
 
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
+Customer: DB Enaex
 
-Customer: <Enter Customer Name\>
+Team Members:
 
-Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
+* UTT:
+  * Project lead : UTT educational tutor
 
-##	Overview
+* DB Enaex:
+  * PM : Yannick DONGUE
+  * Data scientist : Yannick DONGUE
+  * Data administrator : Head of Management Control
+  * Business contact : Global Product Marketing Manager
 
-<Executive summary of entire solution, brief non-technical overview\>
+## Overview
 
-##	Business Domain
-<Industry, business domain of customer\>
+_The project aimed to develop a predictive model for sales volumes for Davey Bickford Enaex, a leading company in the industrial explosives sector. The solution involved collecting and processing historical sales data, applying clustering techniques to group similar product families, and developing machine learning models to predict future sales volumes. The models were validated and deployed to improve supply chain efficiency and production planning._
+
+## Business Domain
+
+The client, Davey Bickford Enaex, operates in the manufacturing and industrial explosives sector, providing blasting solutions to mining and civil engineering industries.
 
 ##	Business Problem
 <Business problem and exact use case(s), why it matters\>

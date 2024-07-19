@@ -2,53 +2,80 @@
 
 ## Business background
 
-* Who is the client, what business domain the client is in.
-* What business problems are we trying to address?
+* Client: Davey Bickford Enaex
+* Business Domain: Manufacturing and industrial explosives
+* Business Problems:
+  * Variability in sales volumes leading to supply chain inefficiencies
+  * Lack of accurate sales volume forecasts affecting production planning and inventory management
 
 ## Scope
-* What data science solutions are we trying to build?
-* What will we do?
-* How is it going to be consumed by the customer?
+
+* Data Science Solutions:
+    Develop predictive models for sales volumes using machine learning techniques
+    Implement clustering techniques to group similar product families for better prediction accuracy
+    Build a comprehensive data pipeline for continuous data processing and model retraining
+* Deliverables:
+    Predictive models for sales volumes
+    Detailed analysis and visualizations of sales trends
+    Documentation of the data pipeline and model deployment process
+* Consumption by Customer:
+    The predictive models will be integrated into the company's existing decision-making systems
 
 ## Personnel
-* Who are on this project:
-	* Microsoft:
-		* Project lead
-		* PM
-		* Data scientist(s)
-		* Account manager
-	* Client:
-		* Data administrator
-		* Business contact
-	
+
+* UTT:
+  * Project lead : UTT educational tutor
+
+* DB Enaex:
+  * PM : Yannick DONGUE
+  * Data scientist : Yannick DONGUE
+  * Data administrator : Head of Management Control
+  * Business contact : Global Product Marketing Manager
+
 ## Metrics
-* What are the qualitative objectives? (e.g. reduce user churn)
-* What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
+
+* Qualitative Objectives : Enhance production planning accuracy
+* Quantifiable Metrics
+
+* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%)
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
 * How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
 
 ## Plan
-* Phases (milestones), timeline, short description of what we'll do in each phase.
+
+1. Data Collection and Preprocessing
+
+   * Collect historical sales data
+   * Clean and preprocess data
+
+2. Exploratory Data Analysis and Clustering
+
+   * Perform EDA to understand data characteristics
+   * Implement clustering techniques
+  
+3. Model Development and Validation
+  
+   * Develop predictive models
+   * Validate models using historical data
+
+4. Deployment and Integration
+
+   * Deploy models into production
 
 ## Architecture
-* Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
-* Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
-  * all the data, 
-  * after some pre-aggregation on-prem,
-  * Sampled data enough for modeling 
 
-* What tools and data storage/analytics resources will be used in the solution e.g.,
-  * ASA for stream aggregation
-  * HDI/Hive/R/Python for feature construction, aggregation and sampling
-  * AzureML for modeling and web service operationalization
-* How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
-  * How will the customer use the model results to make decisions
-  * Data movement pipeline in production
-  * Make a 1 slide diagram showing the end to end data flow and decision architecture
-    * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+* Data
+  * Raw data: Historical sales data stored in Excel files
+  * Data processing: VSCode, Jupyter Notebooks
+
+* Tools and Resources:
+  * VSCode, Jupyter Notebooks
+  * R and Python for feature construction and modeling
+
+* Model Consumption
+  * Pas encore défini
 
 ## Communication
-* How will we keep in touch? Weekly meetings?
-* Who are the contact persons on both sides?
+
+* Meetings :
+  Weekly meetings with the projec lead and the data administrator
