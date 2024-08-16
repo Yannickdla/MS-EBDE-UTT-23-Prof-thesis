@@ -1,4 +1,4 @@
- # Prédiction des Volumes de Ventes 
+# Prédiction des Volumes de Ventes 
 
 ## Description du Projet
 
@@ -12,6 +12,9 @@ Ce projet de thèse professionnelle se concentre sur l'étude et l'implémentati
 - Bibliothèques Python : un fichier " install_libs.ipynb " sera fourni pour pouvoir directement installer les librairies
 - Bibliothèques R : tidyverse, lubridate, dtwclust, wpp2019, countrycode, dynamicTreeCut
 
+### Nota bene
+
+Certains fichiers de données ne seront pas fournis au vu de la sensibilité des informations pour l'entreprise
 
 **NOTE1:** The two documents under Docs/Project, namely the [Charter](./Docs/Project/Charter.md) and [Exit Report](./Docs/Project/Exit%20Report.md) are particularly important to consider. They help to define the project at the start of an engagement, and provide a final report to the customer or client.
 
